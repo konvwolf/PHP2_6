@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: Georgia;
+	font-size: 1em;
+	margin: 0;
+}
+
+a
+{
+	color: #00f;
+}
+
+a:hover
+{
+	color: #f00;
+}
+
+textarea
+{
+	width: 100%;
+	height: 300px;
+}
+
+.to_read {
+	display: block;
+}
+
+#header
+{
+	padding: 10px;
+	background: #eee;
+	text-align: center;
+}
+
+#menu
+{
+	padding: 10px;
+	background: #ccc;
+	font-size: 1.2em;
+}
+
+#content
+{
+	margin: 5px;
+	padding: 10px;
+	border: 1px dotted #999;
+}
+
+#footer
+{
+	padding: 10px;
+	background: #ccc;
+}
+
+button {
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+/* Products list */
+
+.container {
+    width: calc(100% / 3 * 2);
+    margin: 0 auto;
+    box-shadow: 0 0 5px black;
+}
+
+.products_list {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product_card {
+    width: 45%;
+    height: fit-content;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+    box-sizing: border-box;
+}
+
+.product_card img {
+    width: 100%;
+}
+
+.product_card:hover {
+    box-shadow: 6px 6px 3px gray;
+}
+
+.product_link {
+    display: block;
+    text-decoration: none;
+}
+
+.product_name {
+    color: black;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.product_price {
+    font-weight: 600;
+    color: red;
+    margin-left: 10px;
+}
+
+.to_cart {
+    display: block;
+    width: 37px;
+    height: 40px;
+    position: relative;
+    left: 80%;
+    bottom: 30px;
+    font-size: 2em;
+    color: red;
+}
+
+.fa-ruble-sign {
+    color: red;
+    margin-left: 10px;
+}
+
+/* Products description */
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+a:hover {
+    text-shadow: 2px 2px 2px gray;
+}
+
+.product_description {
+    min-height: 100vh;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.product_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.product_images img {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.product_characteristics {
+    margin: 40px 0;
+}
+
+.product_characteristics li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.product_brand {
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.prod_h1_cover {
+    font-size: 2em;
+    margin-bottom: 40px;
+    margin-left: -25px;
+}
+
+.prod_list_cover {
+    margin-left: 25px;
+}
+
+.prod_list_cover li {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.product_descr_price {
+    font-size: 1.5em;
+}
+
+/* Cart button */
+.invisible {
+    display: none;
+}
+
+.cart {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+.btn_cart {
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.cart_block {
+	font-size: 1em;
+    position: absolute;
+    width: 255px;
+    z-index: 3;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    right: 0;
+    top: 60px;
+    border-radius: 5px;
+}
+
+.cart_item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cart_item_name {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.cart_item_price {
+    font-weight: 800
+}
+
+.cart_item_subtotal {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.cart_total_sign {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.cart_total_price {
+    font-weight: 600;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.del_button {
+    color: red;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: right;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+}
+
+.buy_button {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 400;
+}
+
+/* Users cabinet */
+
+.logout {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+/* User' shopping list */
+
+.shopping_list {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.shopping_list td,
+.shopping_list th {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+.admin {
+	color: red;
+	font-size: 1.2em;
+	font-weight: 800;
+}
+
+/* Sales */
+.change_status {
+	font-style: italic;
+	font-weight: 600;
+	padding: 5px;
+	background-color: #eee;
+}
