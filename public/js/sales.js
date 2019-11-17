@@ -19,8 +19,10 @@ class Sales {
         this.change = "change_status=" + this.value + "&prod_id=" + this.prodID
         this.xhr.onreadystatechange = () => {
 				if (this.xhr.readyState == 4 && this.xhr.status == 200) {
-                    el.target.options[this.value].style.backgroundColor = "color: lightgreen"
-				}
+                    el.target.style.backgroundColor = "lightgreen"
+				} else {
+                    el.target.style.backgroundColor = "lightcoral"
+                }
         }
         this.xhr.send (this.change)
         console.log(el.target.options[this.value].innerText)
